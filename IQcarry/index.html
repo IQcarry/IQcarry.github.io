@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IQcarry的个人主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/head.css">
+    <link rel="icon" href="image/head.jpg" type ="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou|Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/my-style.css">
+
+
+    <!-- Modernizr JS -->
+    <script type="text/javascript" src="js/head.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>-->
+    <script src="js/respond.min.js"></script>
+    </head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .load{
+            position: absolute;
+            z-index: 0;
+        }
+        .show0{
+            position: absolute;
+            background: rgba(0,0,0,0);
+            z-index: 99;
+            margin-top: 32%;
+            margin-left: 12%;
+        }
+        .p1{
+            font-size: 5vh;
+            color: #000;
+        }
+        .p2{
+            font-size: 3vh;
+            color: #000;
+        }
+        video#bgvid {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+    </style>
+<body>
+<header class="head">
+    <div class="headbox">
+        <div class="headLogo" onclick="toindex()">IQcarry.github.io</div>
+        <ul class="headul">
+            <li class="headli" onclick="togithub()"><a class="lia">GitHub</a></li>
+            <li class="headli" onclick="toblog()"><a class="lia">博客园</a></li>
+            <li class="headli" onclick="toresume()"><a class="lia">个人简历</a></li>
+            <li class="headli" onclick="toindex()" style="background: rgba(0,0,0,0.55);"><a class="lia">首页</a></li>
+        </ul>
+    </div>
+</header>
+<div class="load" align="center" style="width: 100%">
+    <img src="image/load.gif" width="5%" height="5%" style="margin: 20% auto auto auto">
+</div>
+<div class="show0">
+    <p class="p1" style="font-family: 微软雅黑">欢迎来到 IQcarry 的个人主页</p>
+    <p class="p2" style="font-family: 微软雅黑;margin-top: -3vh">Welcome To My Homepage</p>
+</div>
+<div class="bg">
+    <video autoplay loop muted id="bgvid">
+        <source src="video/yy.mp4" type="video/mp4">
+    </video>
+</div>
+</body>
+</html>
